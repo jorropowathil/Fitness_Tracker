@@ -21,7 +21,7 @@ app.use(express.static("public"));
 
 // // App.use routes (fix when routes established)
 // app.use(require("./routes/apiRoutes.js"));
-// app.use(require("./routes/homeRoutes.js"));
+app.use(require("./routes/homeRoutes.js"));
 
 // Mongoosedb Connection
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/fitnessTrackerDB", {
