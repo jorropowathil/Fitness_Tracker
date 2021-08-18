@@ -22,8 +22,8 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/fitnessTrackerD
 });
 
 // App.use routes (fix when routes established)
-// app.use("route_views");
-// app.use("route_api");
+// app.use("/api", apiRoutes);
+// app.use("");
 
 
 
