@@ -6,10 +6,6 @@ const mongoose = require("mongoose");
 // Port
 const PORT = process.env.PORT || 3001;
 
-// Routes (edit as needed)
-// const routes = require("routes");
-// const api = require("api")
-
 const app = express();
 
 // Middleware
@@ -19,7 +15,7 @@ app.use(express.json());
 // View
 app.use(express.static("public"));
 
-// // App.use routes (fix when routes established)
+// Uncomment after apiRoutes finished
 // app.use(require("./routes/apiRoutes.js"));
 app.use(require("./routes/homeRoutes.js"));
 
