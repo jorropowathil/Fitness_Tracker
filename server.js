@@ -23,8 +23,8 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/fitnessTrackerD
   useFindAndModify: false
 });
 // Uncomment after apiRoutes finished
-// app.use(require("./routes/apiRoutes.js"));
 app.use(require("./routes/homeRoutes.js"));
+// app.use(require("./routes/apiRoutes.js"));
 
 app.listen(PORT, () => {
     console.log(`App running on port ${PORT}!`);
